@@ -1,0 +1,43 @@
+header{
+    background-color: var(--fundo);
+    width: 100%;
+    display: flex;
+    z-index: 1;
+}
+header.fixed {
+    position: fixed;
+    top: 0px; /* Altura do cabeçalho */
+    z-index: 1;
+    transition: top 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+  }
+.cabecalho{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 120px 2fr 120px;
+    align-items: center;
+}
+.logo{
+   align-items: self-start;
+}
+.imagenlogo{
+    justify-content: flex-start;
+    margin: 0 auto;
+    height: 106px;
+    width: 109px;
+    left: 15px;
+    top: 11px;
+    border-radius: 50%;
+}
+.navegacao{
+     width: 100%;
+}
+.caRFav{
+    justify-content: flex-end;
+    display: flex;
+}
+.carrinhoicon{
+    text-decoration: none;
+    height: 50px;
+}

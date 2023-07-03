@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --fundo: #FFFFFF;
+    --font: #000000;
+    --sombra: #00000080 ;
+    --detalhes: #fdd85c ;
+    --principal: #FFFFFF;
+}
+body{
+    background: var(--fundo);
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f05353;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 50%;
+}

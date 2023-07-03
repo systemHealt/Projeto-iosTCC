@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecoBag.css">
+    <link rel="stylesheet" href="drop.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>Atleier</span> Valgreen</a>
+          <div class="navigation">
+            <ul class="menu">
+              <div class="close-btn"></div>
+              <li class="menu-item"><a href="index.html">Pagina Inicial</a></li>
+              <li class="menu-item">
+                <a class="sub-btn" href="#">Produtos <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="camisa.html">Camisas</a></li>
+                  <li class="sub-item"><a href="ecoBag.html">Ecobags</a></li>
+                  <li class="sub-item"><a href="moletom.html">Moletom</a></li>
+                </li>
+                </ul>
+              </li>
+              <li class="menu-item"><a href="#">Faça você mesmo </a></li>
+              <li class="menu-item"><a href="#">Sobre Nós</a></li>
+              <li class="menu-item"><a href="#">Contatos</a></li>
+            </ul>
+          </div>
+          <div class="menu-btn"></div>
+      </header>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="images/01.jpg" draggable="false"/>
+        <img class="image" src="images/02.jpg" draggable="false"/>
+        <img class="image" src="images/03.jpg" draggable="false"/>
+        <img class="image" src="images/04.jpg" draggable="false"/>
+        <img class="image" src="images/10.jpg" draggable="false"/>
+        <img class="image" src="images/11.jpg" draggable="false"/>
+        <img class="image" src="images/12.jpg" draggable="false"/>
+        <img class="image" src="images/05.jpg" draggable="false"/>
+      </div>
+      <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+          <i class='bx bxs-message-dots'></i>
+        </div>
+        <div class="chatbox-message-wrapper">
+          <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+              <img src="images/TOTVS.png" alt="" class="chatbox-message-image">
+              <div>
+                <h4 class="chatbox-message-name">TOTVS</h4>
+                <p class="chatbox-message-status">online</p>
+              </div>
+            </div>
+            <div class="chatbox-message-dropdown">
+                        <i class='bx bx-dots-vertical-rounded'></i>
+              <ul class="chatbox-message-dropdown-menu">
+                <li>
+                  <a href="#">Pesquisar</a>
+                </li>
+                <li>
+                  <a href="#">Reportar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chatbox-message-content">
+            <h4 class="chatbox-message-no-message">Você Não Tem Nenhuma Mensagem! </h4>
+          </div>
+          <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+              <textarea rows="1" placeholder="Enviar..." class="chatbox-message-input"></textarea>
+              <button type="submit" class="chatbox-message-submit"><i class='bx bxs-send'></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="chat.js"></script>
+      <script src="eco.js"></script>
+      <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+   <title>Atelier Valgreen</title>
+   <link rel="shortcut icon" href="../img/favicon/icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="../produtos/sus.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="../CSS/pagina_principal/style.css">
+   <link rel="stylesheet" href="../CSS/pagina_principal/nav.css">
+   <link rel="stylesheet" href="../CSS/pagina_principal/header.css">
+   <link rel="stylesheet" href="../CSS/pagina_principal/footer.css">
+   <link rel="stylesheet" href="../CSS/pagina_principal/filtro.css">
+   <link rel="stylesheet" href="../CSS/pagina_principal/cart.css">
+   <link rel="stylesheet" href="../produtos/chat.css">
+   <script src="../script/scrollbtn.js" defer></script>
+   <script src="../script/cabecalho.js" defer></script>
+   <script src="../filtro/filter-main/filter/main.js" defer></script>
+   <script src="../script/script.js" defer></script>
+   <script src="../script/btncarrinho.js" defer></script>
+   <script src="../produtos/chat.js" defer></script>
+   
+</head>
+
+<body>
+   <header>
+      <div class="cabecalho">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/logo/LogoA.jpeg" alt="" class="imagenlogo">
+          </a>
+        </div>
+        <nav class="nav container">
+          <div class="nav__data">
+             <a href="#" class="nav__logo">
+             </a>
+             
+             <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
+             </div>
+          </div>
+          <!--=============== NAV MENU ===============-->
+          <div class="nav__menu" id="nav-menu">
+             <ul class="nav__list">
+              
+                <!--=============== DROPDOWN 1 ===============-->
+               
+                <li class="dropdown__item">
+                  <div class="nav__link">
+                     Produtos<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <ul class="dropdown__menu">
+                    <li>
+                        <a href="../html/todososprodutos.html" class="dropdown__link">
+                            <i class='bx bx-grid-small' ><span>todos os produtos</span></i>
+                        </a>                          
+                     </li>
+                     <li>
+                        <a href="../html/ecobags.html" class="dropdown__link">
+                          <i class="ri-shopping-bag-line"><span>EcoBag</span></i>
+                        </a>                          
+                     </li>
+
+                     <li>
+                        <a href="../html/moletons.html" class="dropdown__link">
+                          <i class="ri-t-shirt-fill"><span>Moletom</span></i>
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="../html/camisetas.html" class="dropdown__link">
+                          <i class="ri-t-shirt-fill"><span>Camisetas</span></i>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+                <li class="dropdown__item">
+                   <div class="nav__link">
+                      <span>Faça Você Mesmo</span><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                   </div>
+
+                   <ul class="dropdown__menu">
+                      <li>
+                         <a href="../html/customizar.html" class="dropdown__link">
+                          <i class="bx bx-pencil"><span>Customizar</span></i>
+                         </a>                          
+                      </li>
+                   </ul>
+                </li>
+                <li><a href="../html/sobreNosCont.html" class="nav__link">Sobre Nós</a></li>
+                <li><a href="../html/contato.html" class="nav__link">Contatos</a></li>
+                <li><a href="../html/login.html" class="nav__link2">Login</a></li>
+             </ul>
+          </div>
+       </nav>
+       <div class="caRFav">
+        <div class="carrinho">
+          <button class="btncarrinho" id="cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
+          </button>
+          <div class="cart">
+            <h2 class="cart-title">seu carrinho</h2>
+
+            <div class="cart-content">
+
+                <div class="cart-box">
+                    <img src="../img/produtos/Ecobag/00011.jpg" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">eco bag spotify</div>
+                        <div class="cart-price">R$25,00</div>
+                        <input type="number" value="1" min="1" max="1" class="cart-quantity">
+                    </div>
+                    <!-- remover do carrinho -->
+                    <i class='bx bx-trash cart-remove'></i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="titletotal">total </div>
+                <div class="totalprice">R$25</div>
+            </div>
+            <!--botão de compra-->
+            <button type="button" class="btn-buy">comprar agora</button>
+            <!--fechar carrinho-->
+            <i class='bx bx-x' id="close-cart"></i>
+
+          </div>
+        </div>
+        <div class="favorito">
+          <button class="btnfav" onclick="favoritos()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+          </button>
+        </div> 
+      </div>
+    </header>
+
+   
+   <div class="chatbox-wrapper">
+      <div class="chatbox-toggle">
+         <i class='bx bx-message-dots'></i>
+      </div>
+      <div class="chatbox-message-wrapper">
+         <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+               <img src="../img/sobrenos/TOTVS.png" alt="" class="chatbox-message-image">
+               <div>
+                  <h4 class="chatbox-message-name">Totvs</h4>
+                  <p class="chatbox-message-status">online</p>
+               </div>
+            </div>
+            <div class="chatbox-message-dropdown">
+               <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+               <ul class="chatbox-message-dropdown-menu">
+                  <li>
+                     <a href="#">Pesquisar</a>
+                  </li>
+                  <li>
+                     <a href="#">Reportar</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="chatbox-message-content">
+            <h4 class="chatbox-message-no-message">Voce não tem nenhuma mensagem no momento!</h4>
+         </div>
+         <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+               <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+               <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="wrapper">
+      <div class="category-filter">
+          <div class="container">
+              <div class="title">
+                  <h1>Camisetas</h1>
+              </div>
+              <div class="filter-btns">
+                  <button type="button" class="filter-btn" id="all">Todos</button>
+                  <button type="button" class="filter-btn" id="games">Games</button>
+                  <button type="button" class="filter-btn" id="geek">Geek</button>
+                  <button type="button" class="filter-btn" id="rock">Rock</button>
+                  <button type="button" class="filter-btn" id="lgbt">lgbt</button>
+              </div>
+
+              <div class="filter-items shop-content">
+                  <div class="filter-item all games">
+                      <div class="item-img">
+                          <img src="../img/camisas/games1.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info product-box">
+                          <p>Camiseta</p>
+                          <div>
+                            <span class="old-price">R$45.50</span>
+                            <span class="new-price">R$36.40</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all geek">
+                      <div class="item-img">
+                          <img src="../img/camisas/geek1.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Moletom the 1975</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all rock">
+                      <div class="item-img">
+                          <img src="../img/camisas/rock1.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+                  <div class="filter-item all lgbt">
+                      <div class="item-img">
+                          <img src="../img/camisas/lgbt1.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+                  <div class="filter-item all games">
+                      <div class="item-img">
+                          <img src="../img/camisas/games2.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info product-box">
+                          <p>Moletom the smiths</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all geek">
+                      <div class="item-img">
+                          <img src="../img/camisas/geek2.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Moletom the 1975</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all rock">
+                      <div class="item-img">
+                          <img src="../img/camisas/rock2.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+                  <div class="filter-item all lgbt">
+                      <div class="item-img">
+                          <img src="../img/camisas/lgbt2.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+              <div class="filter-items shop-content">
+                  <div class="filter-item all games">
+                      <div class="item-img">
+                          <img src="../img/camisas/games3.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info product-box">
+                          <p>Moletom the smiths</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all geek">
+                      <div class="item-img">
+                          <img src="../img/camisas/geek3.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Moletom the 1975</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all rock">
+                      <div class="item-img">
+                          <img src="../img/camisas/rock3.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+                  <div class="filter-item all lgbt">
+                      <div class="item-img">
+                          <img src="../img/camisas/lgbt3.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all games">
+                      <div class="item-img">
+                          <img src="../img/camisas/games4.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info product-box">
+                          <p>Moletom the smiths</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all geek">
+                      <div class="item-img">
+                          <img src="../img/camisas/geek4.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Moletom the 1975</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+
+                  <div class="filter-item all rock">
+                      <div class="item-img">
+                          <img src="../img/camisas/rock4.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+                  <div class="filter-item all lgbt">
+                      <div class="item-img">
+                          <img src="../img/camisas/lgbt4.jpg" alt="Item image">
+                          <span class="discount">20%</span>
+                      </div>
+                      <div class="item-info">
+                          <p>Cool Item Name</p>
+                          <div>
+                              <span class="old-price">R$20.50</span>
+                              <span class="new-price">R$16.70</span>
+                          </div>
+                          <a href="#" class="add-btn">Adicionar no carrinho</a>
+                      </div>
+                  </div>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <button id="scrollBtn" onclick="scrollToTop()"><i class='bx bxs-chevron-up' ></i></button>
+   <footer>
+      <div class="footer-content">
+          <h2>Atelier Valgreen</h2>
+          <p>Direitos autorais reservados de acordo com a LGPD</p>
+          <ul class="sociais">
+            <li><a href="https://web.facebook.com/people/Atelier-Valgreen/100065107377007/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/atelier.valgreen/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5511995158118" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2023 ateliervalgreen by <span>ios</span></p>
+      </div>
+    </footer>
+<div>
+   <script src="chat.js"></script>
+   <script src="sus.js"></script>
+   <script src="script.js"></script>
+   <script src="eco.js"></script>
+</body>
+</script>
+
+</html>

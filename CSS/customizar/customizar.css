@@ -1,0 +1,71 @@
+.inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 70px;
+    align-items: center;
+}
+
+main h1{
+    text-align: center;
+    margin: 50px 0px 20px ;
+}
+.inputs input{
+    padding: 10px;
+    margin: 0px 10px 5px 10px;
+    border-radius: 20px;
+    width: 300px;
+    
+}
+
+.sect2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+textarea{
+    width: 620px;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+h2{
+    font-size: 20px;
+}
+
+.botao{
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding-top: 5px;
+    
+}
+
+#p1{
+    margin-top: 5px;
+}
+
+#file-upload-button{
+    background-color: #000000;
+}
+
+@media (max-width:900px)
+{
+    #areatexto{
+        width: 200px;
+
+    }
+
+    .sect2{
+        margin-top: 0px;
+    }
+}
+
+.link{
+    color: white;
+}

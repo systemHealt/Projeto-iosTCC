@@ -1,0 +1,75 @@
+main{
+    width: 100%;
+    background-color: var(--principal);
+    margin: auto;
+}
+h2{
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+}
+.sobre p{
+    margin: auto;
+    margin-bottom: 35px;
+    width: 70%;
+}
+.sobre{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+.btnzz{
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    height: 34px;
+    width: 200px;
+    left: 490px;
+    top: 745px;
+    border-radius: 15px;
+}
+.btnzz a{
+    color: #fff;
+    text-decoration: none;
+}
+.carousel-item img{
+   width: 200px;
+   height: 300px;
+   margin: auto;
+
+}
+.carouselExampleIndicators{
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width:900px) {
+    #right, #left{
+        display: none !important;
+    }
+    .main{
+        width: 100%;
+    }
+    .sobre p{
+        width: 99%;
+    }
+    .sobre{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .sobre
+    {
+        padding: 10px;
+    }
+    .tituloCRIATIVIDADE
+    {
+        padding: 0px 5px 5px 5px;
+    }
+    img{
+        padding: 0px 5px 0px 5px;
+    }
+}

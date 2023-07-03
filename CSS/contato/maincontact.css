@@ -1,0 +1,84 @@
+main{
+    background-color: var(--principal);
+    margin: auto;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    margin-left: 80px;
+    
+}
+h2{
+    text-align: center;
+}
+
+
+.bloco, .bloco1{
+    width: 50%;
+    height: 600px;
+    
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.bloco
+{
+    margin: 10px;
+    align-items: center;
+    width: 700px;
+    justify-content: center;
+    
+}
+.redessociais{
+    display: flex;
+    align-items: center;
+}
+.redessociais a span{
+    align-items: center;
+}
+.bloco1
+{
+   margin: 10px;
+    align-items: center;
+}
+
+div span{
+    padding-left: 20px;
+    
+}
+
+.bloco h2 {
+    padding-bottom: 10px;
+}
+
+@media(max-width: 600px){
+    .bloco{
+        width: 100%;
+        text-align: left;
+        height: 50%;
+    }
+    .bloco1{
+        width: 100%;
+        text-align: left;
+        height: 50%;
+    }
+    .bloco h2 {
+    
+    }
+    .main{
+        flex-direction: column;
+        width: 100%;
+    }
+    .mapa{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+     }
+}
